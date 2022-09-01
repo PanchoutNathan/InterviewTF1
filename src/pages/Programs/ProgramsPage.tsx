@@ -31,7 +31,7 @@ export const ProgramsPage: FunctionComponent<ProgramsPageProps> = ({...props}) =
     };
     return <div className='p-3 h-[100vh] m-auto'>
         {loading && <div>Chargement</div>}
-        {data && <Carousel responsive={responsive}>
+        {!loading && data != null  && <Carousel responsive={responsive}>
                 {data?.program?.map((program, index) => {
                     return <ProgramCard program={program} key={index}/>
                 })}
