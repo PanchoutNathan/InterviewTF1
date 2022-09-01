@@ -13,7 +13,7 @@ export const ProgramsPage: FunctionComponent<ProgramsPageProps> = ({...props}) =
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 5
+            items: 8
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -30,7 +30,7 @@ export const ProgramsPage: FunctionComponent<ProgramsPageProps> = ({...props}) =
         }
     };
     return <div className='p-3 h-[100vh] m-auto'>
-        {loading && <div>LOADING</div>}
+        {loading && <div>Chargement</div>}
         {data && <Carousel responsive={responsive}>
                 {data?.program?.map((program, index) => {
                     return <ProgramCard program={program} key={index}/>
