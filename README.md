@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+# Test technique - Repoduction d'un carousel 
+## Stack 
+J'ai vu que vous utilisiez React, Typescript, Apollo et Tailwind alors j'ai donc utilisé les mêmes technologies.
+Sauf le SSR, mais je sais utiliser Next.js par exemple.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Questions pré-réalisation
+- **Est-ce que je recode le comportement d'un carrousel ?** Je pense que c'est totalement inutile,
+  Un développeur ne doit pas réinventer une feature juste pour son plaisir à moins qu'il y ait des limitations en interne.
+- Au vu des datas, on remarque que les titres sont longs, il faut donc rajouter un elipsis sur 2 lignes (grâce à un plugin
+  Tailwind).
+- Je vois que c'est du graphQL, je n'ai jamais donc faut prévoir un petit temps de lecture pour au moins savoir faire les queries- À quoi sert le bouton + de la maquette dans le cartouche d'un programme ?
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Améliorations possibles
+- Une petite erreur s'est glissée dans le naming de la miniature en anglais, il est marqué "thumnail" au lieu de "thumbnail".
+- Ne pas charger tous les programmes d'un coup pour éviter une baisse de performance côté client et garder un navigation
+  fluide / Utiliser une liste virtuelle afin de ne pas avoir 100+ objets qui se chargent d'un coup.
+- Ajouter une recherche pour trouver le programme plus vite ou savoir si un programme existe.
+- Utiliser le bouton '+' dans un cartouche pour pouvoir ajouter ce programme dans ses favoris par exemple.
