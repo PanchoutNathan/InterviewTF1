@@ -5,7 +5,7 @@ interface ProgramsQueryResponse {
     program: Program[];
 }
 
-const GET_POSTS = gql`
+const GET_PROGRAMS = gql`
   query {
     program(offset: 1) {
       id
@@ -18,5 +18,5 @@ const GET_POSTS = gql`
 `;
 
 export function useProgramsQuery() {
-    return useQuery<ProgramsQueryResponse>(GET_POSTS);
+    return useQuery<ProgramsQueryResponse>(GET_PROGRAMS);
 }
