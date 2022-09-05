@@ -8,7 +8,7 @@ Sauf le SSR, mais je sais utiliser Next.js par exemple.
   Un développeur ne doit pas réinventer une feature juste pour son plaisir à moins qu'il y ait des limitations en interne.
 - Au vu des datas, on remarque que les titres sont longs, il faut donc rajouter un elipsis sur 2 lignes (grâce à un plugin
   Tailwind).
-- Je vois que c'est du graphQL, je n'ai jamais donc faut prévoir un petit temps de lecture pour au moins savoir faire les queries- À quoi sert le bouton + de la maquette dans le cartouche d'un programme ?
+- Je vois que c'est du graphQL, je n'ai jamais fait donc faut prévoir un petit temps de lecture pour au moins savoir faire les queries- À quoi sert le bouton + de la maquette dans le cartouche d'un programme ?
 
 
 
